@@ -1,0 +1,48 @@
+nav {
+  font-size: 16px;
+
+  span {
+    font-size: 20px;
+  }
+}
+
+.btn-success {
+  background-color: var(--primary-green) !important;
+  border-color: var(--primary-green) !important;
+  color: var(--light-text) !important;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background-color: var(--dark-green-hover) !important;
+  border-color: var(--dark-green-hover) !important;
+}
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link.sign-in:hover {
+  color: var(--primary-green);
+}
+
+.nav-link.sign-in::after {
+  content: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary-green);
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 50%;
+  left: 50%;
+}
