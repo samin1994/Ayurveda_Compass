@@ -1,0 +1,33 @@
+.right-section,
+.left-section {
+    flex: 1;
+}
+
+.left-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-description {
+    margin-top: 28px;
+    max-width: 580px;
+    font-size: 20px;
+}
+
+.start-button {
+    background-color: var(--primary-green);
+    color: #fff;
+    width: max-content;
+}
+
+.start-button:active,
+.start-button:hover {
+    background-color: var(--dark-green-hover);
+    color: #fff;
+}
+
+.hero-subtitle {
+    margin-top: 12px;
+    font-style: italic;
+}
