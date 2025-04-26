@@ -25,7 +25,6 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/",
-            "baseHref": "/Ayurveda_Compass/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -52,6 +51,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/Ayurveda_Compass/",
               "budgets": [
                 {
                   "type": "initial",
