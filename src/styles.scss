@@ -1,42 +1,49 @@
 :root {
-  /* Colors */
-  --dark-charcoal: #2a2930;
-  --light-beige: #f7ecd9;
-  --soft-green: #b9d399;
-  --primary-green: #7eab49;
-  --deep-green: #3d9970;
-  --muted-brown: #6a6345;
+    /* Colors */
+    --dark-charcoal: #2a2930;
+    --light-beige: #f7ecd9;
+    --soft-green: #b9d399;
+    --primary-green: #7eab49;
+    --deep-green: #3d9970;
+    --muted-brown: #6a6345;
+    --dark-green-hover: #679136;
 
-  /* Text Colors */
-  --dark-text: var(--dark-charcoal);
-  --light-text: var(--light-beige);
-  --lightest-text: #fffefe;
+    /* Text Colors */
+    --dark-text: var(--dark-charcoal);
+    --light-text: var(--light-beige);
+    --lightest-text: #fffefe;
 }
 
 // Cinzel font
 .cinzel {
-  font-family: "Cinzel", serif;
-  font-style: normal;
-  color: var(--dark-text);
+    font-family: "Cinzel", serif;
+    font-style: normal;
+    color: var(--dark-text);
 
-  // Regular Text
-  font-weight: 400;
+    // Regular Text
+    font-weight: 400;
 
-  // Bold Text
-  &.bold {
-    font-weight: 800;
-  }
+    // Bold Text
+    &.bold {
+        font-weight: 800;
+    }
 }
 
 body {
-  font-family: "Lora", serif;
-  color: var(--dark-text);
-  font-weight: 400;
+    font-family: "Lora", serif;
+    color: var(--dark-text);
+    font-weight: 400;
+    background-color: var(--light-beige);
 }
-nav {
-  font-size: 16px;
 
-  span {
-    font-size: 20px;
-  }
+// h1 {
+//     font-size: 36px;
+// }
+
+nav {
+    font-size: 16px;
+
+    span {
+        font-size: 20px;
+    }
 }
