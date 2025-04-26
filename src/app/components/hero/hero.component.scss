@@ -1,17 +1,18 @@
 .hero-container {
     display: flex;
     margin-top: 50px;
-}
-
-.right-section,
-.left-section {
-    flex: 1;
+    justify-content: center;
+    column-gap: 30px;
 }
 
 .left-section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.right-section {
+    max-width: 95%;
 }
 
 .hero-description {
@@ -57,6 +58,13 @@
     }
 
     .right-section {
-        max-width: 95%;
+        max-width: 72%;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .right-section {
+        max-width: 80%;
+    }
+
 }

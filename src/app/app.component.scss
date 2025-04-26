@@ -1,0 +1,83 @@
+div.curve {
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    position: relative;
+    /* Remove the max-width restriction */
+
+    svg {
+        position: absolute;
+        top: 480px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        /* Place it behind the content */
+    }
+}
+
+.curve {
+    width: 100%;
+    // max-width: 1440px;
+    /* Optional: Limit the maximum width */
+    margin: 0 auto;
+    /* Center the curve */
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.container.curve {
+    height: auto;
+    overflow: visible;
+}
+
+
+@media (min-width: 300px) {
+
+    /* sm */
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 576px) {
+
+    /* sm */
+    .container {
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* md */
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* lg */
+    .container {
+        padding: 0 78px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* xl */
+    .container {
+        padding: 0 90px;
+    }
+}
