@@ -1,3 +1,8 @@
+.hero-container {
+    display: flex;
+    margin-top: 50px;
+}
+
 .right-section,
 .left-section {
     flex: 1;
@@ -30,4 +35,28 @@
 .hero-subtitle {
     margin-top: 12px;
     font-style: italic;
+}
+
+// Media Queries
+
+@media (max-width: 991px) {
+    .hero-container {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        margin-top: 10px;
+    }
+
+    .right-section {
+        max-width: 95%;
+    }
 }
