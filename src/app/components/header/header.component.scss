@@ -9,6 +9,9 @@ nav {
     color: var(--dark-green-hover);
   }
 }
+a span {
+  color: var(--dark-green-hover);
+}
 
 .btn-success {
   background-color: var(--primary-green) !important;
@@ -63,10 +66,6 @@ nav {
 .navbar-collapse .btn-success,
 .navbar-collapse .nav-link {
   text-align: center;
-}
-
-.navbar-collapse .btn-success {
-  margin-left: 10px;
 }
 
 @media (max-width: 1200px) {
