@@ -1,6 +1,11 @@
 .features-container {
-    margin-top: 250px;
-    padding: 0 90px;
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    height: 130vh;
+    background: url('../../../../public/assets/curve.svg') no-repeat center top;
+    background-size: cover;
+
 }
 
 .intro-text {
@@ -163,7 +168,7 @@
 @media screen and (max-width: 1739px) and (min-width: 1024px) {
     .features-container {
         margin-top: 190px;
-        padding: 0 20px;
+        padding: 0 90px;
     }
 
     .intro-text {
@@ -246,7 +251,7 @@
 @media screen and (max-width: 991px) and (min-width: 768px) {
     .features-container {
         margin-top: 130px;
-        padding: 0 20px;
+        padding: 0 90px;
     }
 
     .intro-text {
