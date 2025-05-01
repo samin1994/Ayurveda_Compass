@@ -1,15 +1,27 @@
 .features-container {
     position: relative;
     z-index: 1;
-    width: 100vw;
-    height: 130vh;
+    // width: 100vw;
+    /* Full width of the viewport */
+    height: 81vw;
+    /* Dynamically adjust height based on viewport */
     background: url('../../../../public/assets/curve.svg') no-repeat center top;
     background-size: cover;
+    /* Ensure the image scales proportionally */
+    // padding-top: 25%;
+    padding-inline: 8%;
+    /* Adjust padding to align content properly */
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -220px;
 }
 
 .intro-text {
     text-align: center;
+
 
     h1 {
         font-size: 3rem;
@@ -18,7 +30,7 @@
     p {
         margin: 0 auto;
         font-size: 2.1rem;
-        max-width: 700px;
+        max-width: 900px;
     }
 }
 
@@ -86,9 +98,8 @@
 }
 
 @media screen and (min-width: 2130) {
-    .features-container {
-        margin-top: 190px;
-    }
+
+
 
     .intro-text {
 
@@ -100,7 +111,7 @@
     }
 
     .feature-list {
-        margin-top: 90px;
+        margin-top: 110px;
         row-gap: 80px;
     }
 
@@ -124,9 +135,7 @@
 }
 
 @media screen and (min-width: 1740px) and (max-width: 2129px) {
-    .features-container {
-        margin-top: 110px;
-    }
+
 
     .intro-text {
 
@@ -164,11 +173,54 @@
 
 }
 
-
-@media screen and (max-width: 1739px) and (min-width: 1024px) {
+@media screen and (min-width: 1441px) and (max-width: 1739px) {
     .features-container {
-        margin-top: 190px;
-        padding: 0 90px;
+        margin-top: -77px;
+        height: 100vw;
+    }
+
+    .intro-text {
+        h1 {
+            font-size: 2.3rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 0 auto;
+            max-width: 900px;
+            font-size: 1.4rem;
+        }
+    }
+
+    .feature-list {
+        margin-top: 90px;
+        row-gap: 30px;
+    }
+
+    .feature-card {
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        p {
+            font-size: 1.3rem;
+            max-width: 450px;
+        }
+
+        h4 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+    .features-container {
+        margin-top: -77px;
     }
 
     .intro-text {
@@ -209,8 +261,8 @@
 
 @media screen and (max-width: 1024px) and (min-width: 992px) {
     .features-container {
-        margin-top: 220px;
-        padding: 0 20px;
+        margin-top: -90px;
+
     }
 
     .intro-text {
@@ -250,8 +302,8 @@
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
     .features-container {
-        margin-top: 130px;
-        padding: 0 90px;
+        margin-top: -150px;
+        // padding: 0 90px;
     }
 
     .intro-text {
@@ -291,8 +343,9 @@
 
 @media screen and (max-width: 768px) and (min-width: 576px) {
     .features-container {
-        margin-top: 120px;
-        padding: 0 20px;
+        height: 117vw;
+        margin-top: -120px;
+        // padding: 0 20px;
     }
 
     .intro-text {
@@ -332,8 +385,9 @@
 
 @media screen and (min-width: 480px) and (max-width: 576px) {
     .features-container {
-        margin-top: 20px;
-        padding: 0 20px;
+        height: 130vw;
+        margin-top: -90px;
+        // padding: 0 20px;
     }
 
     .intro-text {
@@ -374,8 +428,9 @@
 
 @media screen and (min-width: 380px) and (max-width: 479px) {
     .features-container {
-        margin-top: -10px;
-        padding: 0 20px;
+        height: 150vw;
+        margin-top: -90px;
+        // padding: 0 20px;
     }
 
     .intro-text {
@@ -416,8 +471,9 @@
 
 @media screen and (min-width: 320px) and (max-width: 379px) {
     .features-container {
-        margin-top: 10px;
-        padding: 0 5px;
+        margin-top: -80px;
+        height: 170vw;
+        // padding: 0 5px;
     }
 
     .intro-text {
@@ -458,4 +514,32 @@
         }
     }
 
+}
+
+@media screen and (max-width: 991px) {
+    .features-container {
+        height: 100vw;
+        /* Further increase height for smaller devices */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features-container {
+        height: 100vw;
+        /* Further increase height for smaller devices */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .features-container {
+        // height: 160vh;
+        /* Ensure the curve is fully visible on very small screens */
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .features-container {
+        height: 135vw;
+        /* Ensure the curve is fully visible on very small screens */
+    }
 }
