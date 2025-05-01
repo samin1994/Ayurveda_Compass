@@ -1,0 +1,29 @@
+<div class="faq-container">
+    <div class="left-side">
+        <img src="assets/faq.png" alt="faq image" class="img-fluid faq-image" />
+    </div>
+    <div class="right-side">
+        <h1 class="faq-title">FREQUENTLY ASKED QUESTIONS</h1>
+        <p>Here are some common questions about Ayurveda Compass.</p>
+        <div class="accordion faq-questions" id="faqAccordion">
+            <div class="accordion-item" *ngFor="let question of questions; let i = index">
+                <h2 class="accordion-header" [id]="'heading' + i">
+                    <button class="accordion-button d-flex align-items-center" [class.collapsed]="!question.expanded"
+                        type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse' + i"
+                        [attr.aria-expanded]="question.expanded" [attr.aria-controls]="'collapse' + i"
+                        (click)="toggleAnswer(i)">
+                        <img [src]="question.expanded ? 'assets/minus.svg' : 'assets/plus.svg'" alt="toggle icon"
+                            class="toggle-icon" />
+                        <h3 class="question-title">{{ question.question }}</h3>
+                    </button>
+                </h2>
+                <div [id]="'collapse' + i" class="accordion-collapse collapse" [class.show]="question.expanded"
+                    [attr.aria-labelledby]="'heading' + i" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        {{ question.answer }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,99 @@
+.faq-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 450px;
+    column-gap: 100px;
+    padding: 0 90px;
+
+    .left-side {
+        flex: 2;
+        display: flex;
+        justify-content: right;
+    }
+
+    .right-side {
+        text-align: left;
+        flex: 3;
+        // width: 650px;
+
+        .faq-questions {
+            // width: 650px;
+
+            /* Override Bootstrap Accordion Variables */
+            --bs-accordion-bg: transparent;
+            --bs-accordion-color: var(--dark-text);
+            --bs-accordion-btn-bg: transparent;
+            --bs-accordion-btn-color: var(--dark-text);
+            --bs-accordion-active-bg: transparent;
+            --bs-accordion-active-color: var(--dark-text);
+            --bs-border-color: transparent;
+            --bs-accordion-btn-focus-box-shadow: none;
+            --bs-accordion-body-padding-x: 3.25rem;
+            --bs-accordion-btn-icon-width: 0;
+
+
+            .faq-question {
+                margin-bottom: 1.5rem;
+
+                .question-header {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    font-weight: 600;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+
+                    .question {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                    }
+                }
+
+                .accordion-collapse {
+                    /* Set consistent background color */
+                    overflow: hidden;
+                    /* Prevent content overflow */
+                    height: auto;
+                    /* Ensure consistent height */
+                }
+
+                .accordion-body {
+                    font-size: 1.2rem;
+                    color: #fff;
+                    /* Adjust text color for better contrast */
+                    padding: 1rem;
+                    /* Ensure consistent padding */
+                }
+
+                /* Override Bootstrap's height animation */
+                .accordion-collapse.collapsing {
+                    height: auto !important;
+                    /* Prevent shrinking during collapse */
+                }
+
+                .accordion-collapse.show {
+                    height: auto;
+                    /* Ensure consistent height when expanded */
+                }
+            }
+        }
+    }
+
+    .faq-image {
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* media queries for responsiveness */
+// media query for 4k resolution and min-width 1440px
+@media (min-width: 1440px) and (max-width: 2560px) {
+    .faq-container {
+        margin-top: 800px;
+    }
+}
