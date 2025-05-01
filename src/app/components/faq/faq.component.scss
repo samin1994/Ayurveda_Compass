@@ -1,7 +1,7 @@
 .faq-container {
     display: flex;
     justify-content: center;
-    margin-top: 450px;
+    margin-top: 100px;
     column-gap: 100px;
     padding: 0 90px;
 
@@ -92,8 +92,4 @@
 
 /* media queries for responsiveness */
 // media query for 4k resolution and min-width 1440px
-@media (min-width: 1440px) and (max-width: 2560px) {
-    .faq-container {
-        margin-top: 800px;
-    }
-}
+@media (min-width: 1440px) and (max-width: 2560px) {}
