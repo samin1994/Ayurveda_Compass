@@ -8,6 +8,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { FeaturesMainComponent } from './components/features-main/features-main.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FaqComponent } from './components/faq/faq.component';
+import { LatestArticlesComponent } from './components/latest-articles/latest-articles.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FaqComponent } from './components/faq/faq.component';
     HeroComponent,
     FeaturesMainComponent,
     FooterComponent,
-    FaqComponent
+    FaqComponent,
+    LatestArticlesComponent
   ],
   imports: [
     BrowserModule,
